@@ -2,7 +2,7 @@ FROM quay.io/frrouting/frr:master
 
 LABEL maintainer="vsix@wide.ad.jp"
 
-RUN apk add mtr tcpdump --update-cache --no-cache
+RUN apk add mtr tcpdump fping --update-cache --no-cache
 
 # change daemons 
 RUN sed -i s/bgpd=no/bgpd=yes/ /etc/frr/daemons
