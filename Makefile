@@ -1,4 +1,4 @@
-build_tag := "8.4.1"
+build_tag := "latest"
 
 .PHONY: build
 build:
