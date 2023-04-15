@@ -1,9 +1,10 @@
-build_tag := "latest"
+DOCKER_IMG_TAG ?= latest
 
 .PHONY: build
 build:
-	docker build -t ghcr.io/wide-vsix/vsix-frr:$(build_tag) .
+	docker build -t ghcr.io/wide-vsix/vsix-frr:$(DOCKER_IMG_TAG) .
 
 .PHONY: push
 push:
-	docker push ghcr.io/wide-vsix/vsix-frr:$(build_tag) 
+	docker push ghcr.io/wide-vsix/vsix-frr:$(DOCKER_IMG_TAG)
+
