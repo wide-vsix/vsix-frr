@@ -36,4 +36,4 @@ jobs:
         push: true
         tags: |
           ghcr.io/${{ github.repository_owner }}/vsix-frr:${{ env.DATE_YYMMDD }}
-          ghcr.io/${{ github.repository_owner }}/your_image_name:latest
+          ghcr.io/${{ github.repository_owner }}/vsix-frr:latest
